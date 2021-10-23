@@ -8,7 +8,7 @@ COPY --chown=node:node . .
 
 RUN npm ci --only-production
 
-ENV DEBUG=playground:*
+ENV DEBUG=docker-test:*
 ENV NODE_ENV production
 
-CMD DEBUG=docker-test:* npm start
+CMD npm start
